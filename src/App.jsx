@@ -9,7 +9,6 @@ function App() {
 
   useEffect(() => {
     const localpacientes = JSON.parse(localStorage.getItem('pacientes')) ?? []
-    console.log(localpacientes)
     if(localpacientes.length > 0)
       setPacientes(localpacientes)
   }, [])
